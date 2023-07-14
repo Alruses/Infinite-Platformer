@@ -7,7 +7,8 @@ class Player(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.center = pos
         self.facing = "R"
-
+        self.speed = pygame.math.Vector2(0,0) #remember speed[0] is x speed and speed[1] is y speed
+    
     def update(self):
         #what do we need to update?
         self.image = self.images['p1_walk11']
@@ -21,3 +22,11 @@ class Player(pygame.sprite.Sprite):
         self.facing = "L"
     def right(self):
         self.facing = "R"
+    def jump():
+        #don't worry about being on a platform at the moment, just make the code for jumping
+
+
+#to-do: add l/r movement to left and right functions
+#move_ip function in update
+#include gravity somewhere
+#make jump function move us upwards
