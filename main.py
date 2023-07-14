@@ -13,6 +13,8 @@ color = (255, 224, 179)
 sprite_list = pygame.sprite.Group()
 platforms = pygame.sprite.Group()
 
+player_sprites = {}
+
 def init():
     #make a for loop to instantiate a few platforms
     #for the path, make sure its "images/grassPlat.png"
